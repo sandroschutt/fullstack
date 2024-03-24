@@ -1,0 +1,109 @@
+/* 0 > 450px */
+@media screen and (max-width: 450px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+  /* NAVIGATION */
+  .nav-open {
+    opacity: 0;
+  }
+  .wp-block-site-logo img {
+    height: 45px;
+    width: auto;
+  }
+  .nav-container {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .wp-block-navigation__responsive-close {
+    margin-top: 40px;
+  }
+  .wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
+    background-color: #000;
+    color: var(--ambar);
+  }
+  .wp-block-navigation-item__label {
+    font-size: 30px;
+    text-decoration: none !important;
+  }
+  /* PRESENTATION */
+  .presentation p {
+    font-size: 0.8rem !important;
+  }
+  /* FOOTER */
+  /* SOCIAL-MEDIA-ICONS */
+  .site-footer .social-links {
+    max-width: 200px !important;
+    margin: 0 auto;
+  }
+  /* BLOG */
+  .blog-archive h2 {
+    font-size: 1.5em !important;
+    min-height: 0 !important;
+    max-height: 100%;
+  }
+  .blog-archive h2 a {
+    font-weight: 500;
+  }
+  .blog-archive p {
+    font-size: 1em !important;
+  }
+  /* PROJECTS */
+  .projects-archive h2 {
+    font-size: 1.7em !important;
+    text-align: center;
+  }
+  .projects-archive .wp-block-post-excerpt__excerpt {
+    font-size: 1rem !important;
+  }
+  .projects-archive .project-featured-image {
+    width: 100% !important;
+  }
+  .projects-archive .project-button {
+    width: 100% !important;
+    font-size: 1em;
+  }
+  .projects-archive .project-button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  /* CONTACT */
+  .alt-contact-info {
+    padding-top: auto !important;
+    padding-bottom: auto !important;
+  }
+  .contact-form input[type=submit] {
+    max-width: 100% !important;
+    width: 100%;
+  }
+  .about {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+  }
+  .about .fpt-button {
+    width: 50% !important;
+  }
+  .contact .contact-form input[type=text],
+  .contact .contact-form input[type=email],
+  .contact .contact-form textarea {
+    color: #000;
+  }
+  .contact .contact-form input[type=submit] {
+    max-width: 100% !important;
+    width: 100%;
+  }
+  .contact #input-fields {
+    display: block !important;
+  }
+  .contact #input-fields input {
+    margin-bottom: 15px;
+  }
+  .contact #input-fields p {
+    max-width: 100% !important;
+  }
+  .contact textarea {
+    max-width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=small.css.map */

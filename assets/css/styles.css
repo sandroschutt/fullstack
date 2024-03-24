@@ -1,0 +1,44 @@
+.template .container {
+  opacity: 0;
+  transition: ease opacity 1s;
+  -webkit-transition: ease opacity 1s;
+  -moz-transition: ease opacity 1s;
+  -ms-transition: ease opacity 1s;
+  -o-transition: ease opacity 1s;
+}
+
+.template .container.transparency-off {
+  opacity: 1!important;
+}
+
+header {
+  opacity: 1!important;
+}
+
+/* Custom Classes */
+.hidden {
+  display: none;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.default-shadow {
+  box-shadow: 2px 3px 13px var(--default-shadow);
+}
+
+/* COLORS */
+/* palette yellow */
+.palette-yellow {
+  color: var(--ambar) !important;
+}
+
+.sticky {
+  position: sticky !important;
+}
+
+/* LAYOUT */
+:where(figure) {
+  margin: -5px 0 0 !important;
+}

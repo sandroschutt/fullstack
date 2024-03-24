@@ -1,0 +1,19 @@
+body {
+  background-color: white;
+}
+
+.single-post {
+  margin-top: 0 !important;
+}
+
+.image-credits a {
+  color: var(--ambar) !important;
+  text-decoration: none !important;
+}
+
+.type-post a, .type-post p a {
+  font-weight: 600;
+  color: var(--deep-blue);
+}
+
+/*# sourceMappingURL=blog.css.map */

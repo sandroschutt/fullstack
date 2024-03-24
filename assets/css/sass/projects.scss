@@ -1,0 +1,53 @@
+body {
+  background-color: white !important;
+}
+
+.project-content {
+  position: relative !important;
+  margin-top: -45px !important;
+
+  .client-tag {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    font-size: 0.9em;
+    font-weight: 600;
+    background-color: black;
+    color: var(--ambar);
+  }
+
+  .client-tag,
+  .project-type {
+    font-style: italic;
+  }
+
+  .client-tag,
+  .project-technologies span {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+  .project-technologies {
+    margin-top: 0 !important;
+
+    span {
+      display: inline-block;
+      padding: 3px 6px;
+      margin: 0 5px !important;
+      color: white;
+      font-weight: 600;
+      font-size: 0.6em;
+      text-align: center;
+    }
+  }
+
+  .type-project {
+    a,
+    p a {
+      color: var(--deep-blue);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+body {
+  background-color: white;
+}
+
+.blog-archive h2 {
+  font-size: 1.5em !important;
+  min-height: 120px;
+  max-height: 150px;
+}
+.blog-archive p {
+  font-size: 0.8em;
+}
+
+.wp-block-post-date {
+  font-size: 0.8em;
+}
+
+.wp-block-post-excerpt {
+  margin-top: 0 !important;
+}
+
+/*# sourceMappingURL=archive-blog.css.map */

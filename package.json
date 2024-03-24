@@ -1,0 +1,22 @@
+{
+  "name": "twentytwentythreechild",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "styles-build": "sass --watch css/sass/styles.scss css/build/styles.css",
+    "root-build": "sass --watch css/sass/root.scss css/build/root.css",
+    "home-build": "sass --watch css/sass/home.scss css/build/home.css",
+    "small-build": "sass --watch css/sass/screen/small.scss css/build/screen/small.css",
+    "medium-build": "sass --watch css/sass/screen/medium.scss css/build/screen/medium.css",
+    "blog-build": "sass --watch css/sass/blog.scss css/build/blog.css",
+    "archive-blog-build": "sass --watch css/sass/archive-blog.scss css/build/archive-blog.css",
+    "projects-build": "sass --watch css/sass/projects.scss css/build/projects.css",
+    "archive-projects-build": "sass --watch css/sass/archive-projects.scss css/build/archive-projects.css",
+    "about-build": "sass --watch css/sass/about.scss css/build/about.css",
+    "contact-build": "sass --watch css/sass/contact.scss css/build/contact.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,10 @@
+:root {
+    --ambar: #fcb900;
+    --ambar-hover: #e0a500;
+    --deep-blue: #13203c;
+    --card-bg: #ffffff08;
+    --bg-dark-grey: rgb(26, 26, 27);
+    --bg-nav-item: #272727;
+
+    --default-shadow: #00000050;
+}

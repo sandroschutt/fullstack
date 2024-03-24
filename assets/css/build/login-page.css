@@ -1,0 +1,20 @@
+@import "../root.css";
+body {
+  background-color: var(--deep-blue);
+}
+
+#login form {
+  padding: 48px 24px 56px;
+  border-radius: 12px !important;
+  -webkit-border-radius: 12px !important;
+  -moz-border-radius: 12px !important;
+  -ms-border-radius: 12px !important;
+  -o-border-radius: 12px !important;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.4392156863);
+}
+#login #nav a,
+#login #backtoblog a {
+  color: white;
+}
+
+/*# sourceMappingURL=login-page.css.map */

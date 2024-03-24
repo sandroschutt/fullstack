@@ -1,0 +1,57 @@
+.fpt-column {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+
+  .fpt-button {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    border: 2px solid var(--ambar);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+
+    transition: background-color 200ms linear;
+
+    span {
+      margin-left: 20px;
+      align-self: center;
+    }
+
+    i {
+      background-color: var(--ambar);
+      padding: 5px 10px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--ambar);
+    }
+  }
+
+  .fpt-button,
+  .fpt-button:hover,
+  .fpt-nav-item,
+  .fpt-nav-item:hover,
+  .fpt-nav-item:hover .fpt-nav-item--text {
+    transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+  }
+
+  .fpt-column .fpt-button i,
+  .fpt-nav-item {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }

@@ -1,0 +1,91 @@
+/* LAYOUT */
+:where(.wp-site-blocks) > * {
+  margin-block-start: -5px;
+}
+
+.contact {
+  background-color: var(--deep-blue);
+  color: white;
+  min-height: 75vh;
+
+  br {
+    display: none;
+  }
+
+  p {
+    margin: 0 30px 0 auto !important;
+  }
+
+  .input-field {
+    display: flex;
+    justify-content: flex-start;
+
+    label {
+      display: flex;
+      width: 100%;
+    }
+
+    input {
+      margin-right: 12px;
+      padding: 10px 0 10px 20px;
+    }
+  }
+
+  .submit-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+
+    span {
+      font-size: .8rem;
+    }
+
+    a {
+      padding-left: 4px;
+      color: rgb(66, 126, 255);
+    }
+  }
+
+  textarea {
+    width: 92%;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+
+  input[type="text"],
+  input[type="submit"] {
+    width: 100%;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
+
+  input,
+  textarea {
+    margin-bottom: 12px;
+    color: white;
+    background-color: var(--card-bg);
+    box-shadow: 2px 3px 13px var(--default-shadow);
+    border: none;
+  }
+
+  input[type="submit"] {
+    width: 100px;
+    padding: 10px;
+    background-color: var(--ambar);
+    color: #000000;
+    box-shadow: 2px 3px 13px var(--default-shadow);
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--ambar-hover);
+    }
+  }
+}

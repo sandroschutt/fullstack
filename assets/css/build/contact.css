@@ -1,0 +1,80 @@
+/* LAYOUT */
+:where(.wp-site-blocks) > * {
+  margin-block-start: -5px;
+}
+
+.contact {
+  background-color: var(--deep-blue);
+  color: white;
+  min-height: 75vh;
+}
+.contact br {
+  display: none;
+}
+.contact p {
+  margin: 0 30px 0 auto !important;
+}
+.contact .input-field {
+  display: flex;
+  justify-content: flex-start;
+}
+.contact .input-field label {
+  display: flex;
+  width: 100%;
+}
+.contact .input-field input {
+  margin-right: 12px;
+  padding: 10px 0 10px 20px;
+}
+.contact .submit-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+}
+.contact .submit-field span {
+  font-size: 0.8rem;
+}
+.contact .submit-field a {
+  padding-left: 4px;
+  color: rgb(66, 126, 255);
+}
+.contact textarea {
+  width: 92%;
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.contact input[type=text],
+.contact input[type=submit] {
+  width: 100%;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.contact input,
+.contact textarea {
+  margin-bottom: 12px;
+  color: white;
+  background-color: var(--card-bg);
+  box-shadow: 2px 3px 13px var(--default-shadow);
+  border: none;
+}
+.contact input[type=submit] {
+  width: 100px;
+  padding: 10px;
+  background-color: var(--ambar);
+  color: #000000;
+  box-shadow: 2px 3px 13px var(--default-shadow);
+}
+.contact input[type=submit]:hover {
+  cursor: pointer;
+  background-color: var(--ambar-hover);
+}
+
+/*# sourceMappingURL=contact.css.map */

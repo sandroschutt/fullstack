@@ -1,0 +1,56 @@
+@import "./button.scss";
+
+body {
+  background-color: var(--deep-blue) !important;
+  color: white !important;
+}
+
+.about {
+  .fpt-button {
+    width: 80%;
+  }
+
+  .cards,
+  .experience {
+    p {
+      margin-top: 0 !important;
+    }
+
+    .card {
+      border: 1px solid var(--ambar);
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+  }
+
+  .experience--icon {
+    text-align: center;
+  }
+
+  .about-education img {
+    margin-top: 5px;
+  }
+
+  .experience {
+    i {
+      text-align: center;
+      color: var(--bg-dark-grey);
+      padding: 5px;
+      background-color: var(--ambar);
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+    }
+  }
+}
+
+.fpt-container .fpt-columns {
+  height: auto !important;
+}
+
+
