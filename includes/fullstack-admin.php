@@ -1,4 +1,5 @@
 <?php
+
 namespace FUllstack;
 
 require_once dirname(dirname(__FILE__)) . "/includes/fullstack-interface.php";
@@ -32,7 +33,7 @@ class FullstackAdminSettings implements FullstackInterface
                 </li>
             </ul>
         </div>
-    <?php }
+<?php }
 
     public function create_projects_post_type()
     {
@@ -76,6 +77,49 @@ class FullstackAdminSettings implements FullstackInterface
 
         if (!post_type_exists('projects')) {
             register_post_type('projects', $args);
+        }
+    }
+
+    public function create_page(string $pageTitle)
+    {
+        $page = array(
+            'post_title'    => $pageTitle,
+            'post_content'  => '',
+            'post_status'   => 'publish',
+            'post_type'     => 'page',
+            'post_name' => strtolower($pageTitle)
+        );
+
+        $post_id = wp_insert_post($page);
+
+        if (!is_wp_error($post_id)) {
+            return $post_id;
+        }
+
+        return false;
+    }
+
+    public function create_theme_pages()
+    {
+        $pages = get_pages();
+        $filteredPages = array();
+
+        $fullstackPages = array(
+            'home',
+            'blog',
+            'projects',
+            'contact',
+            'about'
+        );
+
+        foreach ($pages as $page) {
+            array_push($filteredPages, $page->post_name);
+        }
+
+        foreach ($fullstackPages as $page) {
+            if (!array_search($page, $filteredPages) && $filteredPages[array_search($page, $filteredPages)] !== 'about') {
+                $this->create_page(ucwords($page));
+            }
         }
     }
 }

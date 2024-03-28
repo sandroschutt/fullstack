@@ -11,6 +11,7 @@ class FUllstackSettings {
     public function __construct() {
         $this->public = new FullstackPublicSettings();
         $this->admin = new FullstackAdminSettings();
+        $this->activation_hook();
         $this->action_hooks();
         $this->filter_hooks();
     }
@@ -26,5 +27,9 @@ class FUllstackSettings {
 
     public function filter_hooks() {
         add_filter("script_loader_tag", array($this->public, 'add_public_modules'), 10, 3);
+    }
+
+    public function activation_hook() {
+        add_action('after_switch_theme', array($this->admin, 'create_theme_pages'));
     }
 }
