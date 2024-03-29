@@ -31,5 +31,6 @@ class FUllstackSettings {
 
     public function activation_hook() {
         add_action('after_switch_theme', array($this->admin, 'create_theme_pages'));
+        add_action('after_switch_theme', array($this->admin, 'theme_reading_settings'));
     }
 }
