@@ -122,4 +122,18 @@ class FullstackAdminSettings implements FullstackInterface
             }
         }
     }
+
+    public function theme_reading_settings()
+    {
+        $front_page = get_page_by_path('home');
+        if ($front_page) {
+            update_option('page_on_front', $front_page->ID);
+            update_option('show_on_front', 'page');
+        }
+
+        $blog_page = get_page_by_path('blog');
+        if ($blog_page) {
+            update_option('page_for_posts', $blog_page->ID);
+        }
+    }
 }
