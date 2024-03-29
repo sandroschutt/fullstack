@@ -8,54 +8,45 @@
 ?>
 <!-- wp:template-part {"slug":"header","area":"header"} /-->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"0","left":"0","right":"0","top":"0rem"},"margin":{"bottom":"0"}}},"className":"container about","layout":{"type":"constrained"}} -->
-<div class="wp-block-group container about" style="margin-bottom:0;padding-top:0rem;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30"}}},"layout":{"type":"constrained","contentSize":"","wideSize":""}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--30)"><!-- wp:post-title {"textAlign":"left","level":1} /--></div>
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|60","left":"0","right":"0","top":"var:preset|spacing|60"},"margin":{"bottom":"0"}}},"className":"container about","layout":{"type":"constrained"}} -->
+<div class="wp-block-group container about" style="margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-right:0;padding-bottom:var(--wp--preset--spacing--60);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0"}}},"layout":{"type":"constrained","contentSize":"","wideSize":""}} -->
+<div class="wp-block-group" style="padding-top:0"><!-- wp:post-title {"textAlign":"left","level":1} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"0","margin":{"bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained","contentSize":"1200px","wideSize":"1200px"}} -->
 <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--60)"><!-- wp:columns {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0em","right":"0em"}}},"className":"fpt-columns"} -->
-    <div class="wp-block-columns fpt-columns" style="padding-top:0;padding-right:0em;padding-bottom:0;padding-left:0em"><!-- wp:column {"className":"fpt-column"} -->
-        <div class="wp-block-column fpt-column"><!-- wp:columns {"style":{"spacing":{"padding":{"top":"0","bottom":"0"}}}} -->
-            <div class="wp-block-columns" style="padding-top:0;padding-bottom:0"><!-- wp:column {"verticalAlignment":"top","className":"cards"} -->
-                <div class="wp-block-column is-vertically-aligned-top cards"><!-- wp:embed {"url":"https://www.youtube.com/watch?v=F35QeYbXP1k","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-                    <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-                        <div class="wp-block-embed__wrapper">
-                            https://www.youtube.com/watch?v=F35QeYbXP1k
-                        </div>
-                    </figure>
-                    <!-- /wp:embed -->
-                </div>
-                <!-- /wp:column -->
+<div class="wp-block-columns fpt-columns" style="padding-top:0;padding-right:0em;padding-bottom:0;padding-left:0em"><!-- wp:column {"className":"fpt-column"} -->
+<div class="wp-block-column fpt-column"><!-- wp:columns {"style":{"spacing":{"padding":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns" style="padding-top:0;padding-bottom:0"><!-- wp:column {"verticalAlignment":"top","className":"cards"} -->
+<div class="wp-block-column is-vertically-aligned-top cards"><!-- wp:embed {"url":"https://www.youtube.com/watch?v=F35QeYbXP1k","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=F35QeYbXP1k
+</div></figure>
+<!-- /wp:embed --></div>
+<!-- /wp:column -->
 
-                <!-- wp:column {"width":"20%","style":{"typography":{"fontSize":"0.8rem"}}} -->
-                <div class="wp-block-column" style="font-size:0.8rem;flex-basis:20%"><!-- wp:paragraph {"style":{"typography":{"fontSize":"0.8rem"}}} -->
-                    <p style="font-size:0.8rem">Name: <strong>Fullstack</strong></p>
-                    <!-- /wp:paragraph -->
+<!-- wp:column {"width":"20%","style":{"typography":{"fontSize":"0.8rem"}}} -->
+<div class="wp-block-column" style="font-size:0.8rem;flex-basis:20%"><!-- wp:paragraph {"style":{"typography":{"fontSize":"0.8rem"}}} -->
+<p style="font-size:0.8rem">Name: <strong>Fullstack</strong></p>
+<!-- /wp:paragraph -->
 
-                    <!-- wp:paragraph {"style":{"typography":{"fontSize":"0.8rem"}}} -->
-                    <p style="font-size:0.8rem">Nationality: <strong>Brazilian</strong></p>
-                    <!-- /wp:paragraph -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.8rem"}}} -->
+<p style="font-size:0.8rem">Nationality: <strong>Brazilian</strong></p>
+<!-- /wp:paragraph -->
 
-                    <!-- wp:paragraph {"style":{"typography":{"fontSize":"0.8rem"}}} -->
-                    <p style="font-size:0.8rem">Freelance: <strong>Available</strong></p>
-                    <!-- /wp:paragraph -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.8rem"}}} -->
+<p style="font-size:0.8rem">Freelance: <strong>Available</strong></p>
+<!-- /wp:paragraph -->
 
-                    <!-- wp:html -->
-                    <div class="fpt-button">
-                        <span><a id="downloadLink">Download CV</a></span>
-                        <i class="bi bi-arrow-right"></i>
-                    </div>
-                    <!-- /wp:html -->
-                </div>
-                <!-- /wp:column -->
-            </div>
-            <!-- /wp:columns -->
-        </div>
-        <!-- /wp:column -->
-    </div>
-    <!-- /wp:columns -->
-</div>
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"highlights","textColor":"base","style":{"border":{"radius":"12px"},"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-base-color has-highlights-background-color has-text-color has-background has-link-color wp-element-button" style="border-radius:12px"><strong>Download CV</strong></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
@@ -70,9 +61,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:create-block/charts {"id":"locy78yu","title":"My Skills","description":"Out of 5","labels":"[\u0022HTML\u0022,\u0022CSS\u0022,\u0022Javascript\u0022,\u0022PHP\u0022,\u0022Node\u0022,\u0022React\u0022,\u0022jQuery\u0022,\u0022Laravel\u0022,\u0022SASS\u0022,\u0022Bootstrap\u0022,\u0022Wordpress\u0022,\u0022SQL\u0022]","values":"[\u00225\u0022,\u00225\u0022,\u00225\u0022,\u00224\u0022,\u00224\u0022,\u00223\u0022,\u00223\u0022,\u00222\u0022,\u00223\u0022,\u00224\u0022,\u00224\u0022,\u00223\u0022]","colors":"[\u0022#ffa047\u0022,\u0022#a931b9\u0022,\u0022#c2e34a\u0022,\u0022#7634ad\u0022,\u0022#639774\u0022,\u0022#509baa\u0022,\u0022#507baa\u0022,\u0022#aa506b\u0022,\u0022#d966f0\u0022,\u0022#8a4cbd\u0022,\u0022#4f65a9\u0022,\u0022#e4ff85\u0022]"} -->
-<div class="charts-container" class="wp-block-create-block-charts">
-        Charts – hello from the saved content!
-    </div>
+<div class="charts-container" class="wp-block-create-block-charts">Charts – hello from the saved content!</div>
 <!-- /wp:create-block/charts --></div>
 <!-- /wp:group -->
 
