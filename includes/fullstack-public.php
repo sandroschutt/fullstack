@@ -39,12 +39,12 @@ class FullstackPublicSettings implements FullstackInterface
             wp_enqueue_script('archive-projects');
         }
 
-        if (get_page_template_slug() === 'page-contact') {
+        if (get_page_template_slug() === 'page-contact' || is_page("contact")) {
             wp_register_script(__('contact', 'fullstack'), get_theme_file_uri() . '/assets/javascript/contact.js', array('jquery'), null, true);
             wp_enqueue_script('contact');
         }
 
-        if (get_page_template_slug() === "page-about") {
+        if (get_page_template_slug() === "page-about" || is_page("about")) {
             wp_register_script('about', get_theme_file_uri() . '/assets/javascript/about.js', array('jquery'), null, true);
             wp_enqueue_script('about');
             wp_register_script('chart_js', 'https://cdn.jsdelivr.net/npm/chart.js', array('jquery'), null, true);
@@ -84,12 +84,12 @@ class FullstackPublicSettings implements FullstackInterface
             wp_enqueue_style('archive-projects');
         }
 
-        if (get_page_template_slug() === 'page-contact') {
+        if (get_page_template_slug() === 'page-contact' || is_page('contact')) {
             wp_register_style('contact', get_theme_file_uri() . '/assets/css/build/contact.css');
             wp_enqueue_style('contact');
         }
 
-        if (get_page_template_slug() === "page-about") {
+        if (get_page_template_slug() === "page-about" || is_page('about')) {
             wp_register_style('about-page', get_theme_file_uri() . '/assets/css/build/about.css');
             wp_enqueue_style('about-page');
         }
