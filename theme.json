@@ -18,9 +18,9 @@
         "sizes": {
           "postTitle": "3rem",
           "postQueryTitle": "1.5em",
-		  "aboutInfo": ".8rem",
-		  "contactInfo": ".8rem",
-		  "smaller": ".8rem"
+          "aboutInfo": "1.2em",
+          "contactInfo": ".8em",
+          "smaller": "1em"
         },
         "weight": {
           "light": "400",
@@ -31,7 +31,12 @@
       "borderRadius": {
         "lowRounded": "8px",
         "midRounded": "12px",
-        "rounded": "16px"
+        "rounded": "16px",
+        "highRounded": "20px"
+      },
+      "shadow": {
+        "default": "2px 3px 13px #00000050",
+        "smooth": "4px 4px 16px #00000070"
       },
       "frontPage": {
         "presentation": {
@@ -56,7 +61,7 @@
         },
         "skills": {
           "card": {
-            "backgroundColor": "#ffffff08"
+            "backgroundColor": "#ffffff08"  
           },
           "fontSize": {
             "listItem": "1em"
@@ -64,7 +69,7 @@
         }
       },
       "posts": {
-		"minHeight": "500px",
+        "minHeight": "500px",
         "pagination": {
           "fontWeight": "500"
         }
@@ -88,6 +93,11 @@
           "slug": "primary"
         },
         {
+          "color": "#e0a500",
+          "name": "Primary Hover",
+          "slug": "primary-hover"
+        },
+        {
           "color": "#345C00",
           "name": "Secondary",
           "slug": "secondary"
@@ -103,15 +113,20 @@
           "slug": "background"
         },
         {
+          "color": "#6497b1",
+          "name": "Light Blue",
+          "slug": "light-blue"
+        },
+        {
           "color": "#FCB900",
           "name": "Highlights",
           "slug": "highlights"
         },
-		{
-			"color": "#e4e4e4",
-			"name": "Separator",
-			"slug": "separator"
-		}
+        {
+          "color": "#e4e4e4",
+          "name": "Separator",
+          "slug": "separator"
+        }
       ]
     },
     "layout": {

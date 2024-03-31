@@ -1,0 +1,44 @@
+/* Layout */
+@mixin default-site-logo {
+  height: 45px;
+  width: auto;
+}
+
+@mixin default-background {
+  background-color: $backgroundColor !important;
+  color: $baseColor !important;
+}
+
+/* Spacing */
+@mixin input-padding {
+  padding: 15px;
+}
+
+/* Colors */
+@mixin primary-contrast-color {
+  background-color: $primaryColor;
+  color: $contrastColor;
+}
+
+/* Fonts */
+@mixin default-bold-font {
+  font-size: $fsSmaller;
+  font-weight: $fwBold;
+}
+
+/* Borders */
+@mixin default-border-radius {
+  border-radius: $defaultBorderRadius !important;
+  -webkit-border-radius: $defaultBorderRadius !important;
+  -moz-border-radius: $defaultBorderRadius !important;
+  -ms-border-radius: $defaultBorderRadius !important;
+  -o-border-radius: $defaultBorderRadius !important;
+}
+
+@mixin high-rounded-border-radius {
+  border-radius: $highRoundedBorderRadius;
+  -webkit-border-radius: $highRoundedBorderRadius;
+  -moz-border-radius: $highRoundedBorderRadius;
+  -ms-border-radius: $highRoundedBorderRadius;
+  -o-border-radius: $highRoundedBorderRadius;
+}

@@ -1,31 +1,23 @@
-body {
-  background-color: white;
-}
-
-.wp-block-post-excerpt__excerpt,
-.wp-block-post-date {
-  font-size: 0.8em !important;
-}
-
-.wp-block-post-excerpt__excerpt {
-  margin-top: 0 !important;
-  min-height: 120px;
-  max-height: 150px;
-}
-
-.projects-archive h2 {
-  font-weight: 500;
-}
+/* Layout */
+/* Spacing */
+/* Colors */
+/* Fonts */
+/* Borders */
 .projects-archive ul li {
-  margin-bottom: 40px;
+  margin-bottom: var(--wp--preset--spacing--50);
 }
 .projects-archive .project-button {
-  width: 50%;
+  width: 70%;
   padding: 15px;
-  background-color: var(--ambar);
-  color: black;
-  font-size: 0.8em;
-  font-weight: 600;
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--contrast);
+  font-size: var(--wp--custom--fonts--sizes--smaller);
+  font-weight: var(--wp--custom--fonts--weight--bold);
+  border-radius: var(--wp--custom--border-radius--mid-rounded) !important;
+  -webkit-border-radius: var(--wp--custom--border-radius--mid-rounded) !important;
+  -moz-border-radius: var(--wp--custom--border-radius--mid-rounded) !important;
+  -ms-border-radius: var(--wp--custom--border-radius--mid-rounded) !important;
+  -o-border-radius: var(--wp--custom--border-radius--mid-rounded) !important;
   border: none;
 }
 .projects-archive .project-button:hover {
@@ -33,7 +25,7 @@ body {
   opacity: 0.7;
 }
 .projects-archive .project-button:active {
-  border: 2px solid black;
+  border: 2px solid var(--wp--preset--color--contrast);
 }
 
 /*# sourceMappingURL=archive-projects.css.map */

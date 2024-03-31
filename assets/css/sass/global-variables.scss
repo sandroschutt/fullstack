@@ -1,0 +1,30 @@
+// Colors
+$backgroundColor: var(--wp--preset--color--background);
+$baseColor: var(--wp--preset--color--base);
+$primaryColor: var(--wp--preset--color--primary);
+$primaryHoverColor: var(--wp--preset--color--primary-hover);
+$contrastColor: var(--wp--preset--color--contrast);
+$lightBlueColor: var(--wp--preset--color--light-blue);
+
+$cardBackgroundColor: var(--wp--custom--front-page--skills--card--background-color);
+
+
+// Fonts
+$fsPostTitle: var(--wp--custom--fonts--sizes--post-title);
+$fsPostQueryTitle: var(--wp--custom--fonts--sizes--post-query-title);
+$fsAboutInfo: var(--wp--custom--fonts--sizes--about-info);
+$fsContactInfo: var(--wp--custom--fonts--sizes--contact-info);
+$fsSmaller: var(--wp--custom--fonts--sizes--smaller);
+
+$fwLight: var(--wp--custom--fonts--weight--light);
+$fwMedium: var(--wp--custom--fonts--weight--medium);
+$fwBold: var(--wp--custom--fonts--weight--bold);
+
+// Borders
+$defaultBorderRadius: var(--wp--custom--border-radius--mid-rounded);
+$lowRoundedBorderRadius: var(--wp--custom--border-radius--low-rounded);
+$highRoundedBorderRadius: var(--wp--custom--border-radius--high-rounded);
+
+// Shadows
+$defaultShadow: var(--wp--custom--shadow--default);
+$smoothShadow: var(--wp--custom--shadow--smooth);

@@ -1,0 +1,8 @@
+@import "./global-variables.scss";
+
+.type-post {
+  a, p a {
+    font-weight: $fwBold;
+    color: $lightBlueColor;
+  }
+}

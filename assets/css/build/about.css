@@ -1,77 +1,21 @@
-.fpt-column {
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-}
-
-.fpt-button {
-  display: flex;
-  justify-content: space-between;
-  width: 35%;
-  border: 2px solid var(--ambar);
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  transition: background-color 200ms linear;
-}
-.fpt-button span {
-  margin-left: 20px;
-  align-self: center;
-}
-.fpt-button i {
-  background-color: var(--ambar);
-  padding: 5px 10px;
-}
-.fpt-button:hover {
-  cursor: pointer;
-  background-color: var(--ambar);
-}
-
-.fpt-button,
-.fpt-button:hover,
-.fpt-nav-item,
-.fpt-nav-item:hover,
-.fpt-nav-item:hover .fpt-nav-item--text {
-  transition: all 200ms ease-in-out;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-}
-
-.fpt-column .fpt-button i,
-.fpt-nav-item {
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+/* Layout */
+/* Spacing */
+/* Colors */
+/* Fonts */
+/* Borders */
+/* LAYOUT */
+:where(.wp-site-blocks) > * {
+  margin-block-start: -5px;
 }
 
 body {
-  background-color: var(--deep-blue) !important;
-  color: white !important;
+  background-color: var(--wp--preset--color--background) !important;
+  color: var(--wp--preset--color--base) !important;
 }
 
-.about .fpt-button {
-  width: 80%;
-}
 .about .cards p,
 .about .experience p {
   margin-top: 0 !important;
-}
-.about .cards .card,
-.about .experience .card {
-  border: 1px solid var(--ambar);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
 .about .experience--icon {
   text-align: center;
@@ -81,18 +25,14 @@ body {
 }
 .about .experience i {
   text-align: center;
-  color: var(--bg-dark-grey);
+  color: var(--wp--preset--color--contrast);
   padding: 5px;
-  background-color: var(--ambar);
+  background-color: var(--wp--preset--color--primary);
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
-}
-
-.fpt-container .fpt-columns {
-  height: auto !important;
 }
 
 /*# sourceMappingURL=about.css.map */

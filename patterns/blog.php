@@ -18,7 +18,7 @@
 
         <!-- wp:post-title {"isLink":true, "style":{"typography":{"fontSize":"var(--wp--custom--fonts--sizes--post-query-title)"}}} /-->
 
-        <!-- wp:post-excerpt {"excerptLength":16} /-->
+        <!-- wp:post-excerpt {"excerptLength":16,"style":{"typography":{"fontSize":"var(--wp--custom--fonts--sizes--smaller)"}}} /-->
 
         <!-- wp:post-date {"isLink":true} /-->
 

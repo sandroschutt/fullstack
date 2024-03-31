@@ -1,0 +1,6 @@
+.type-post a, .type-post p a {
+  font-weight: var(--wp--custom--fonts--weight--bold);
+  color: var(--wp--preset--color--light-blue);
+}
+
+/*# sourceMappingURL=single-post.css.map */

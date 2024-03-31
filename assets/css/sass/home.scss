@@ -1,6 +1,9 @@
+@import "./global-variables.scss";
+@import "./mixins.scss";
+
 /* LAYOUT */
 body, .wp-site-blocks {
-  background-color: var(--wp--preset--color--background);
+  background-color: $backgroundColor;
 }
 
 /* PRESENTATION */
@@ -13,50 +16,32 @@ body, .wp-site-blocks {
 /* ABOUT */
 .about-element strong {
   a {
-    color: var(--ambar) !important;
+    color: $primaryColor !important;
   }
-}
-
-/* PROJECTS */
-.wpcp-slide-image {
-  img {
-    box-shadow: 0px 2px 7px black;
-  }
-}
-
-.wpcp-slide-image img,
-.services .service,
-.skills .skill,
-.contact-form form {
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
 }
 
 /* SERVICES */
 .services .service,
 .contact-form form {
-  background-color: var(--card-bg) !important;
+  background-color: $cardBackgroundColor;
 }
 
 .services .service,
 .skills .skill,
 .contact-form form {
-  box-shadow: 2px 3px 13px #00000050;
+  box-shadow: $defaultShadow;
 }
 
 /* SKILLS */
 .skills {
   .skill {
     .skill-title {
-      border-radius: 8px 8px 0 0;
-      -webkit-border-radius: 8px 8px 0 0;
-      -moz-border-radius: 8px 8px 0 0;
-      -ms-border-radius: 8px 8px 0 0;
-      -o-border-radius: 8px 8px 0 0;
-    }
+      border-radius: $defaultBorderRadius $defaultBorderRadius 0 0;
+      -webkit-border-radius: $defaultBorderRadius $defaultBorderRadius 0 0;
+      -moz-border-radius: $defaultBorderRadius $defaultBorderRadius 0 0;
+      -ms-border-radius: $defaultBorderRadius $defaultBorderRadius 0 0;
+      -o-border-radius: $defaultBorderRadius $defaultBorderRadius 0 0;
+}
   }
 }
 
@@ -68,22 +53,20 @@ body, .wp-site-blocks {
 
   input,
   textarea {
+    @include input-padding;
     width: 90%;
     max-height: 150px;
     margin-bottom: 32px;
-    padding: 15px;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid var(--ambar);
-    color: white;
+    border-bottom: 1px solid $primaryColor;
+    color: $baseColor;
   }
 
-  input[type="submit"],
-  button[type="submit"] {
+  p input[type="submit"] {
     max-width: 30%;
     padding: 12px 20px;
-    background-color: var(--ambar);
-    color: black;
+    @include primary-contrast-color;
     font-weight: bold;
     border: none;
   }
@@ -99,6 +82,6 @@ body, .wp-site-blocks {
 /* BLOG */
 .query-title {
   a {
-    color: var(--ambar) !important;
+    color: $primaryColor !important;
   }
 }

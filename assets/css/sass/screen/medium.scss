@@ -1,3 +1,5 @@
+@import "../global-variables.scss";
+
 @media screen and (min-width: 451px) and (max-width: 1000px) {
   /* SKILLS */
   .skill-wp,
@@ -5,5 +7,20 @@
   .skill-frontend {
     padding-right: 10px !important;
     padding-left: revert !important;
+  }
+
+  /* ABOUT */
+  .about {
+    padding-right: var(--wp--style--root--padding-right) !important;
+    padding-left: var(--wp--style--root--padding-left) !important;
+
+    .wp-block-spacer {
+      display: none;
+    }
+  }
+
+  /* CONTACT */
+  .contact {
+    min-height: 80vh !important;
   }
 }

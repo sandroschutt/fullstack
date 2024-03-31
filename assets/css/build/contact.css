@@ -1,11 +1,16 @@
+/* Layout */
+/* Spacing */
+/* Colors */
+/* Fonts */
+/* Borders */
 /* LAYOUT */
 :where(.wp-site-blocks) > * {
   margin-block-start: -5px;
 }
 
 .contact {
-  background-color: var(--deep-blue);
-  color: white;
+  background-color: var(--wp--preset--color--background);
+  color: var(--wp--preset--color--base);
   min-height: 75vh;
 }
 .contact br {
@@ -33,48 +38,51 @@
   width: 98%;
 }
 .contact .submit-field span {
-  font-size: 0.8rem;
+  font-size: var(--wp--custom--fonts--sizes--contact-info);
 }
 .contact .submit-field a {
   padding-left: 4px;
-  color: rgb(66, 126, 255);
+  color: var(--wp--preset--color--light-blue);
 }
 .contact textarea {
   width: 92%;
   padding: 20px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  border-radius: var(--wp--custom--border-radius--high-rounded);
+  -webkit-border-radius: var(--wp--custom--border-radius--high-rounded);
+  -moz-border-radius: var(--wp--custom--border-radius--high-rounded);
+  -ms-border-radius: var(--wp--custom--border-radius--high-rounded);
+  -o-border-radius: var(--wp--custom--border-radius--high-rounded);
 }
 .contact input[type=text],
 .contact input[type=submit] {
   width: 100%;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
+  border-radius: var(--wp--custom--border-radius--high-rounded);
+  -webkit-border-radius: var(--wp--custom--border-radius--high-rounded);
+  -moz-border-radius: var(--wp--custom--border-radius--high-rounded);
+  -ms-border-radius: var(--wp--custom--border-radius--high-rounded);
+  -o-border-radius: var(--wp--custom--border-radius--high-rounded);
+}
+.contact input,
+.contact textarea,
+.contact input[type=submit] {
+  box-shadow: var(--wp--custom--shadow--default);
 }
 .contact input,
 .contact textarea {
   margin-bottom: 12px;
-  color: white;
-  background-color: var(--card-bg);
-  box-shadow: 2px 3px 13px var(--default-shadow);
+  color: var(--wp--preset--color--base);
+  background-color: var(--wp--preset--color--background);
   border: none;
 }
 .contact input[type=submit] {
   width: 100px;
-  padding: 10px;
-  background-color: var(--ambar);
-  color: #000000;
-  box-shadow: 2px 3px 13px var(--default-shadow);
+  padding: 12px;
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--contrast);
 }
 .contact input[type=submit]:hover {
   cursor: pointer;
-  background-color: var(--ambar-hover);
+  background-color: var(--wp--preset--color--primary-hover);
 }
 
 /*# sourceMappingURL=contact.css.map */
