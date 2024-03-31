@@ -1,0 +1,48 @@
+/* Layout */
+/* Spacing */
+/* Colors */
+/* Fonts */
+/* Borders */
+.project-content {
+  position: relative !important;
+  margin-top: -45px !important;
+}
+.project-content .client-tag {
+  display: block;
+  padding: 10px;
+  text-align: left;
+  font-size: var(--wp--custom--fonts--sizes--smaller);
+  font-weight: var(--wp--custom--fonts--weight--bold);
+  background-color: var(--wp--preset--color--contrast);
+  color: var(--wp--preset--color--primary);
+}
+.project-content .client-tag,
+.project-content .project-type {
+  font-style: italic;
+}
+.project-content .client-tag,
+.project-content .project-technologies span {
+  border-radius: calc(var(--wp--custom--border-radius--low-rounded) - 4px);
+  -webkit-border-radius: calc(var(--wp--custom--border-radius--low-rounded) - 4px);
+  -moz-border-radius: calc(var(--wp--custom--border-radius--low-rounded) - 4px);
+  -ms-border-radius: calc(var(--wp--custom--border-radius--low-rounded) - 4px);
+  -o-border-radius: calc(var(--wp--custom--border-radius--low-rounded) - 4px);
+}
+.project-content .project-technologies {
+  margin-top: 0 !important;
+}
+.project-content .project-technologies span {
+  display: inline-block;
+  padding: 3px 6px;
+  margin: 0 5px !important;
+  color: var(--wp--preset--color--base);
+  font-weight: var(--wp--custom--fonts--weight--bold);
+  font-size: calc(var(--wp--custom--fonts--sizes--smaller) - 0.4em);
+  text-align: center;
+}
+.project-content .type-project a,
+.project-content .type-project p a {
+  color: var(--wp--preset--color--background);
+}
+
+/*# sourceMappingURL=single-project.css.map */

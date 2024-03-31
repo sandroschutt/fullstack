@@ -1,3 +1,6 @@
+@import "./global-variables.scss";
+@import "./mixins.scss";
+
 .template .container {
   opacity: 0;
   transition: ease opacity 1s;
@@ -8,11 +11,15 @@
 }
 
 .template .container.transparency-off {
-  opacity: 1!important;
+  opacity: 1 !important;
 }
 
 header {
-  opacity: 1!important;
+  opacity: 1 !important;
+}
+
+.wp-block-site-logo.is-default-size img {
+  @include default-site-logo;
 }
 
 /* Custom Classes */
@@ -25,13 +32,13 @@ header {
 }
 
 .default-shadow {
-  box-shadow: 2px 3px 13px var(--default-shadow);
+  box-shadow: $defaultShadow;
 }
 
 /* COLORS */
 /* palette yellow */
 .palette-yellow {
-  color: var(--ambar) !important;
+  color: $primaryColor !important;
 }
 
 .sticky {

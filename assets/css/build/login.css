@@ -1,0 +1,23 @@
+/* Layout */
+/* Spacing */
+/* Colors */
+/* Fonts */
+/* Borders */
+body {
+  background-color: var(--wp--preset--color--background);
+}
+
+#login form {
+  padding: 48px 24px 56px;
+  border-radius: var(--wp--custom--border-radius--mid-rounded) !important;
+  -webkit-border-radius: var(--wp--custom--border-radius--mid-rounded) !important;
+  -moz-border-radius: var(--wp--custom--border-radius--mid-rounded) !important;
+  -ms-border-radius: var(--wp--custom--border-radius--mid-rounded) !important;
+  -o-border-radius: var(--wp--custom--border-radius--mid-rounded) !important;
+}
+#login #nav a,
+#login #backtoblog a {
+  color: var(--wp--preset--color--base);
+}
+
+/*# sourceMappingURL=login.css.map */

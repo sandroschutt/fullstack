@@ -1,3 +1,5 @@
+@import "../global-variables.scss";
+
 /* 0 > 450px */
 @media screen and (max-width: 450px) {
   .mobile-hidden {
@@ -7,11 +9,6 @@
   /* NAVIGATION */
   .nav-open {
     opacity: 0;
-  }
-
-  .wp-block-site-logo img {
-    height: 45px;
-    width: auto;
   }
 
   .nav-container {
@@ -25,8 +22,8 @@
 
   .wp-block-navigation:not(.has-background)
     .wp-block-navigation__responsive-container.is-menu-open {
-    background-color: #000;
-    color: var(--ambar);
+    background-color: $contrastColor;
+    color: $primaryColor;
   }
 
   .wp-block-navigation-item__label {
@@ -41,47 +38,15 @@
     }
   }
 
-  /* FOOTER */
-  /* SOCIAL-MEDIA-ICONS */
-  .site-footer {
-    .social-links {
-      max-width: 200px !important;
-      margin: 0 auto;
-    }
-  }
-
-  /* BLOG */
-  .blog-archive {
-    h2 {
-      font-size: 1.5em !important;
-      min-height: 0 !important;
-      max-height: 100%;
-
-      a {
-        font-weight: 500;
-      }
-    }
-
-    p {
-      font-size: 1em !important;
-    }
-  }
-
   /* PROJECTS */
+  .blog-archive,
   .projects-archive {
-    h2 {
-      font-size: 1.7em!important;
-      text-align: center;
+    li {
+      margin: 28px auto;
     }
+  }
 
-    .wp-block-post-excerpt__excerpt {
-      font-size: 1rem !important;
-    }
-
-    .project-featured-image {
-      width: 100% !important;
-    }
-
+  .projects-archive {
     .project-button {
       width: 100% !important;
       font-size: 1em;
@@ -117,13 +82,7 @@
 
   .contact {
     .contact-form {
-      input[type="text"],
-      input[type="email"],
-      textarea {
-        color: #000;
-      }
-
-      input[type="submit"] {
+      span input[type="submit"] {
         max-width: 100% !important;
         width: 100%;
       }

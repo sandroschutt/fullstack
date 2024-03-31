@@ -1,0 +1,56 @@
+/* Layout */
+/* Spacing */
+/* Colors */
+/* Fonts */
+/* Borders */
+.template .container {
+  opacity: 0;
+  transition: ease opacity 1s;
+  -webkit-transition: ease opacity 1s;
+  -moz-transition: ease opacity 1s;
+  -ms-transition: ease opacity 1s;
+  -o-transition: ease opacity 1s;
+}
+
+.template .container.transparency-off {
+  opacity: 1 !important;
+}
+
+header {
+  opacity: 1 !important;
+}
+
+.wp-block-site-logo.is-default-size img {
+  height: 45px;
+  width: auto;
+}
+
+/* Custom Classes */
+.hidden {
+  display: none;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.default-shadow {
+  box-shadow: var(--wp--custom--shadow--default);
+}
+
+/* COLORS */
+/* palette yellow */
+.palette-yellow {
+  color: var(--wp--preset--color--primary) !important;
+}
+
+.sticky {
+  position: sticky !important;
+}
+
+/* LAYOUT */
+:where(figure) {
+  margin: -5px 0 0 !important;
+}
+
+/*# sourceMappingURL=style.css.map */

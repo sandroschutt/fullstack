@@ -1,43 +1,26 @@
-body {
-  background-color: white;
-}
-
-.wp-block-post-excerpt__excerpt,
-.wp-block-post-date {
-  font-size: 0.8em !important;
-}
-
-.wp-block-post-excerpt__excerpt {
-  margin-top: 0 !important;
-  min-height: 120px;
-  max-height: 150px;
-}
+@import "./global-variables.scss";
+@import "./mixins.scss";
 
 .projects-archive {
-  h2 {
-    font-weight: 500;
-  }
-
   ul li {
-    margin-bottom: 40px;
+    margin-bottom: var(--wp--preset--spacing--50);
   }
 
   .project-button {
-    width: 50%;
-    padding: 15px;
-    background-color: var(--ambar);
-    color: black;
-    font-size: 0.8em;
-    font-weight: 600;
+    width: 70%;
+    @include input-padding;
+    @include primary-contrast-color;
+    @include default-bold-font;
+    @include default-border-radius;
     border: none;
-
+    
     &:hover {
       cursor: pointer;
       opacity: 0.7;
     }
 
     &:active {
-      border: 2px solid black;
+      border: 2px solid $contrastColor;
     }
   }
 }

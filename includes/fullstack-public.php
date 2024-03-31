@@ -54,7 +54,7 @@ class FullstackPublicSettings implements FullstackInterface
 
     public function enqueue_styles()
     {
-        wp_enqueue_style('styles', get_theme_file_uri() . '/assets/css/styles.css');
+        wp_enqueue_style('style', get_theme_file_uri() . '/assets/css/build/style.css');
         wp_enqueue_style('root-variables', get_theme_file_uri() . '/assets/css/root.css');
         wp_enqueue_style('screen-small', get_theme_file_uri() . '/assets/css/build/screen/small.css');
         wp_enqueue_style('screen-medium', get_theme_file_uri() . '/assets/css/build/screen/medium.css');
@@ -65,18 +65,13 @@ class FullstackPublicSettings implements FullstackInterface
         }
 
         if (is_singular('post')) {
-            wp_register_style('blog', get_theme_file_uri() . '/assets/css/build/blog.css');
-            wp_enqueue_style('blog');
-        }
-
-        if (is_home()) {
-            wp_register_style('archive-blog', get_theme_file_uri() . '/assets/css/build/archive-blog.css');
-            wp_enqueue_style('archive-blog');
+            wp_register_style('single-post', get_theme_file_uri() . '/assets/css/build/single-post.css');
+            wp_enqueue_style('single-post');
         }
 
         if (is_singular(__('projects', 'fullstack'))) {
-            wp_register_style('projects', get_theme_file_uri() . '/assets/css/build/projects.css');
-            wp_enqueue_style('projects');
+            wp_register_style('single-project', get_theme_file_uri() . '/assets/css/build/single-project.css');
+            wp_enqueue_style('single-project');
         }
 
         if (is_post_type_archive(__('projects', 'fullstack'))) {

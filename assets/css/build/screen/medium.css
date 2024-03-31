@@ -6,6 +6,18 @@
     padding-right: 10px !important;
     padding-left: revert !important;
   }
+  /* ABOUT */
+  .about {
+    padding-right: var(--wp--style--root--padding-right) !important;
+    padding-left: var(--wp--style--root--padding-left) !important;
+  }
+  .about .wp-block-spacer {
+    display: none;
+  }
+  /* CONTACT */
+  .contact {
+    min-height: 80vh !important;
+  }
 }
 
 /*# sourceMappingURL=medium.css.map */

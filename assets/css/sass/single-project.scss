@@ -1,0 +1,51 @@
+@import "./global-variables.scss";
+@import "./mixins.scss";
+
+.project-content {
+  position: relative !important;
+  margin-top: -45px !important;
+
+  .client-tag {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    @include default-bold-font;
+    background-color: $contrastColor;
+    color: $primaryColor;
+  }
+
+  .client-tag,
+  .project-type {
+    font-style: italic;
+  }
+
+  .client-tag,
+  .project-technologies span {
+    border-radius: calc($lowRoundedBorderRadius - 4px);
+    -webkit-border-radius: calc($lowRoundedBorderRadius - 4px);
+    -moz-border-radius: calc($lowRoundedBorderRadius - 4px);
+    -ms-border-radius: calc($lowRoundedBorderRadius - 4px);
+    -o-border-radius: calc($lowRoundedBorderRadius - 4px);
+}
+
+  .project-technologies {
+    margin-top: 0 !important;
+
+    span {
+      display: inline-block;
+      padding: 3px 6px;
+      margin: 0 5px !important;
+      color: $baseColor;
+      font-weight: $fwBold;
+      font-size: calc($fsSmaller - .4em);
+      text-align: center;
+    }
+  }
+
+  .type-project {
+    a,
+    p a {
+      color: $backgroundColor;
+    }
+  }
+}
