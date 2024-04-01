@@ -10,7 +10,7 @@
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
 <main class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--50)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"color":{"background":"var:preset|color|background"}},"textColor":"luminous-vivid-amber","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group has-luminous-vivid-amber-color has-text-color has-background" style="background-color:#13203c;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)"><!-- wp:post-title {"textAlign":"center","level":1,"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|30"}},"typography":{"fontSize":"var:custom|fonts|sizes|post-title","fontStyle":"normal","fontWeight":"var:custom|fonts|weight|light"}},"className":"container"} /-->
+    <div class="wp-block-group has-luminous-vivid-amber-color has-text-color has-background" style="background-color:var(--wp--preset--color--background);padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)"><!-- wp:post-title {"textAlign":"center","level":1,"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|30"}},"typography":{"fontSize":"var:custom|fonts|sizes|post-title","fontStyle":"normal","fontWeight":"var:custom|fonts|weight|light"}},"className":"container"} /-->
 
         <!-- wp:post-featured-image {"aspectRatio":"16/9","width":"70%","overlayColor":"contrast","align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}},"border":{"radius":"var:custom|border-radius|mid-rounded"}},"className":"container project-featured-image hide-on-touch"} /-->
     </div>
@@ -19,7 +19,7 @@
     <!-- wp:group {"className":"container project-content hide-on-touch","layout":{"type":"constrained"}} -->
     <div class="wp-block-group container project-content hide-on-touch"><!-- wp:columns {"className":"hide-on-touch"} -->
         <div class="wp-block-columns hide-on-touch"><!-- wp:column {"verticalAlignment":"center"} -->
-            <div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"className":"client-tag"} -->
+            <div class="wp-block-column is-vertically-aligned-center client-column"><!-- wp:paragraph {"className":"client-tag"} -->
                 <p class="client-tag"></p>
                 <!-- /wp:paragraph -->
             </div>
@@ -36,12 +36,12 @@
         <!-- /wp:columns -->
 
         <!-- wp:paragraph {"className":"project-type hide-on-touch"} -->
-        <p class="project-type hide-on-touch"></p>
+        <p class="project-type hide-on-touch"><strong><?= esc_html_x('Type:', 'fullstack') ?></strong></p>
         <!-- /wp:paragraph -->
 
         <!-- wp:group {"className":"project-technologies hide-on-touch","layout":{"type":"constrained"}} -->
         <div class="wp-block-group project-technologies hide-on-touch"><!-- wp:paragraph {"className":"project-technologies"} -->
-            <p class="project-technologies"></p>
+            <p class="project-technologies"><i><strong><?= esc_html_x('Technologies: ','fullstack') ?></strong></i></p>
             <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->

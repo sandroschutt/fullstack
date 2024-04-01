@@ -1,18 +1,21 @@
-import $ from './jquery.js';
-import './actions/sliceArchiveExcerpt.js';
+/**
+ * Add javascript to your Projects home.
+ */
+
+import $ from "./jquery.js";
 
 $(document).ready(() => {
-    const projects = $('li.type-projects')
+  const projectLinks = $("li.type-projects figure a");
+  const projectButtons = $(".project-button");
+  const linksList = Array();
 
-    $.map(projects, (p) => {
-        let projectButton = document.createElement('button')
-        let buttonLink = p.children[1].children[0].attributes[0].value
+  $.map(projectLinks, (link) => {
+    linksList.push(link.href);
+  });
 
-        projectButton.innerText = "View"
-        projectButton.setAttribute('class', 'project-button')
-        projectButton.addEventListener('click', () => {
-            window.location.href = buttonLink
-        })
-        p.appendChild(projectButton)
-    })
-})
+  $.map(projectButtons, (button, index) => {
+    button.addEventListener("click", () => {
+      window.location.href = linksList[index];
+    });
+  });
+});

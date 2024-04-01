@@ -2,15 +2,17 @@
 @import "./mixins.scss";
 
 /* LAYOUT */
-:where(.wp-site-blocks) > * {
-  margin-block-start: -5px;
-}
+// :where(.wp-site-blocks) > * {
+//   margin-block-start: -5px;
+// }
 
 body {
   @include default-background;
 }
 
 .about {
+  padding-top: var(--wp--preset--spacing--50);
+
   .cards,
   .experience {
     p {

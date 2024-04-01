@@ -3,6 +3,14 @@
 /* Colors */
 /* Fonts */
 /* Borders */
+:where(.wp-site-blocks) > main {
+  margin-block-start: 0 !important;
+}
+
+:where(body .is-layout-constrained) > :first-child .client-column {
+  margin-block-start: 1em;
+}
+
 .project-content {
   position: relative !important;
   margin-top: -45px !important;

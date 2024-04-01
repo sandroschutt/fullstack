@@ -4,15 +4,14 @@
 /* Fonts */
 /* Borders */
 /* LAYOUT */
-:where(.wp-site-blocks) > * {
-  margin-block-start: -5px;
-}
-
 body {
   background-color: var(--wp--preset--color--background) !important;
   color: var(--wp--preset--color--base) !important;
 }
 
+.about {
+  padding-top: var(--wp--preset--spacing--50);
+}
 .about .cards p,
 .about .experience p {
   margin-top: 0 !important;

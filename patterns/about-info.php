@@ -8,8 +8,8 @@
  */
 ?>
 
-<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--60)"><!-- wp:columns {"className":"fpt-columns"} -->
+<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60", "top":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"><!-- wp:columns {"className":"fpt-columns"} -->
     <div class="wp-block-columns fpt-columns"><!-- wp:column {"className":"fpt-column"} -->
         <div class="wp-block-column fpt-column"><!-- wp:columns -->
             <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"top","className":"cards"} -->
@@ -37,7 +37,7 @@
 
                     <!-- wp:buttons -->
                     <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"highlights","textColor":"base","style":{"border":{"radius":"var:custom|border-radius|mid-rounded"},"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"className":"is-style-fill"} -->
-                        <div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-base-color has-highlights-background-color has-text-color has-background has-link-color wp-element-button" style="border-radius:12px"><strong>Download CV</strong></a></div>
+                        <div class="wp-block-button is-style-fill"><a id="downloadLink" class="wp-block-button__link has-base-color has-highlights-background-color has-text-color has-background has-link-color wp-element-button" style="border-radius:12px"><strong>Download CV</strong></a></div>
                         <!-- /wp:button -->
                     </div>
                     <!-- /wp:buttons -->
