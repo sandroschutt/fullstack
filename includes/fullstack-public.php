@@ -14,11 +14,6 @@ class FullstackPublicSettings implements FullstackInterface
         wp_register_script('actions', get_theme_file_uri() . '/assets/javascript/actions/index.js', array('jquery'), null, true);
         wp_enqueue_script('actions');
 
-        if (is_front_page()) {
-            wp_register_script('projectsCarouselClick', get_theme_file_uri() . '/assets/javascript/actions/projectsCarouselClick.js', array('jquery'), null, true);
-            wp_enqueue_script('projectsCarouselClick');
-        }
-
         if (is_singular('post')) {
             wp_register_script('countReadingTime', get_theme_file_uri() . '/assets/javascript/actions/countReadingTime.js', array('jquery'), null, true);
             wp_enqueue_script('countReadingTime');
@@ -47,15 +42,12 @@ class FullstackPublicSettings implements FullstackInterface
         if (get_page_template_slug() === "page-about" || is_page("about")) {
             wp_register_script('about', get_theme_file_uri() . '/assets/javascript/about.js', array('jquery'), null, true);
             wp_enqueue_script('about');
-            wp_register_script('chart_js', 'https://cdn.jsdelivr.net/npm/chart.js', array('jquery'), null, true);
-            wp_enqueue_script('chart_js');
         }
     }
 
     public function enqueue_styles()
     {
         wp_enqueue_style('style', get_theme_file_uri() . '/assets/css/build/style.css');
-        wp_enqueue_style('root-variables', get_theme_file_uri() . '/assets/css/root.css');
         wp_enqueue_style('screen-small', get_theme_file_uri() . '/assets/css/build/screen/small.css');
         wp_enqueue_style('screen-medium', get_theme_file_uri() . '/assets/css/build/screen/medium.css');
 
@@ -101,8 +93,6 @@ class FullstackPublicSettings implements FullstackInterface
             'contact',
             'about',
             'countReadingTime',
-            'projectsCarouselClick',
-            'chart_js'
         );
 
         foreach ($scripts as $key => $script) {

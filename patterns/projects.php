@@ -21,6 +21,11 @@
         <!-- wp:post-title {"textAlign":"left","isLink":true,"style":{"typography":{"fontSize":"var(--wp--custom--fonts--sizes--post-query-title)","fontStyle":"normal"}},"textColor":"base"} /-->
 
         <!-- wp:post-excerpt {"excerptLength":30,"style":{"typography":{"fontSize":"var(--wp--custom--fonts--sizes--smaller)"}}} /-->
+
+        <button class="project-button">
+            <?= esc_html_x('View','fullstack') ?>
+        </button>
+
         <!-- /wp:post-template -->
 
         <!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"space-between"}} -->

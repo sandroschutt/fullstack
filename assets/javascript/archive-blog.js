@@ -1,1 +1,3 @@
-import './actions/sliceArchiveExcerpt.js';
+/**
+ * Add javascript to your Blog home.
+*/

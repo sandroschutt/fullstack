@@ -2,12 +2,7 @@ import $ from "../jquery.js";
 
 $(document).ready(() => {
   try {
-    $(".template .container").toggleClass("transparency-off");
-
-    const projectsLink = $("[title='projects-link']");
-    projectsLink.on("click", () => {
-      window.location.href = `${window.location.protocol}//${window.location.host}/projects`;
-    });
+    $(".container").toggleClass("transparency-off");
 
     const button = document.querySelector(
       ".wp-block-navigation__responsive-container-open "
