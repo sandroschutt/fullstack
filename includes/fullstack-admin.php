@@ -33,7 +33,7 @@ class FullstackAdminSettings implements FullstackInterface
                 </li>
             </ul>
         </div>
-<?php }
+    <?php }
 
     public function create_projects_post_type()
     {
@@ -135,5 +135,58 @@ class FullstackAdminSettings implements FullstackInterface
         if ($blog_page) {
             update_option('page_for_posts', $blog_page->ID);
         }
+    }
+
+    public function add_theme_options_page()
+    {
+        add_options_page(
+            'Fullstack Settings',
+            'FS Settings',
+            'manage_options',
+            'fs-theme-options',
+            array($this, 'render_custom_options_page')
+        );
+    }
+
+    public function render_custom_options_page()
+    {
+    ?>
+        <div class="wrap">
+            <h1><?= esc_html_x('Fullstack Settings', 'fullstack') ?></h1>
+            <p><?= esc_html_x('This is a brief description of the custom option page.', 'fullstack') ?></p>
+
+            <form method="post" action="options.php">
+                <?php
+                // Add your select field here
+                ?>
+                <label for="template_select"><strong><?= esc_html_x('Enable transition effect:', '') ?></strong></label>
+                <select name="template_select" id="template_select" style="display: block;">
+                    <option value="true"><?= esc_html_x('Yes', 'fullstack') ?></option>
+                    <option value="false"><?= esc_html_x('No', 'fullstack') ?></option>
+                </select>
+
+                <label for="template_select"><strong><?= esc_html_x('Single Project template:', '') ?></strong></label>
+                <select name="template_select" id="template_select" style="display: block;">
+                    <?php
+                    // Get all registered post templates
+                    $templates = get_page_templates();
+
+                    // Loop through the templates and create an option for each
+                    foreach ($templates as $slug => $name) {
+                        echo '<option value="' . esc_attr($slug) . '">' . esc_html_x($name, 'fullstack') . '</option>';
+                    }
+                    ?>
+                </select>
+
+                <label for="ga4_token"><strong><?= esc_html_x('Google Analytics Token:', 'fullstack') ?></strong></label>
+                <input type="text" name="ga4_token" id="ga4_token" value="<?php echo esc_attr(get_option('ga4_token')); ?>" style="display: block;">
+
+                <?php
+                // Output the save button
+                submit_button('Save Changes');
+                ?>
+            </form>
+        </div>
+<?php
     }
 }
