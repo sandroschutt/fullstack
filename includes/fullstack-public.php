@@ -1,10 +1,7 @@
 <?php
-
-namespace Fullstack;
-
 require_once dirname(dirname(__FILE__)) . "/includes/fullstack-interface.php";
 
-class FullstackPublicSettings implements FullstackInterface
+class FullstackPublicSettings implements Fullstack\FullstackInterface
 {
     public function enqueue_scripts()
     {
@@ -86,10 +83,9 @@ class FullstackPublicSettings implements FullstackInterface
     {
         $scripts = array(
             'jquery-module',
-            'actions',
             'archive-blog',
-            'projects',
             'archive-projects',
+            'projects',
             'contact',
             'about',
             'countReadingTime',

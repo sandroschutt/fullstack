@@ -1,10 +1,7 @@
 <?php
-
-namespace FUllstack;
-
 require_once dirname(dirname(__FILE__)) . "/includes/fullstack-interface.php";
 
-class FullstackAdminSettings implements FullstackInterface
+class FullstackAdminSettings implements Fullstack\FullstackInterface
 {
     public function enqueue_scripts()
     {
@@ -14,7 +11,7 @@ class FullstackAdminSettings implements FullstackInterface
     {
     }
 
-    public function admin_notices()
+    public function add_admin_notices(): void
     { ?>
         <div class="notice notice-warning is-dismissible">
             <p><?php _e('This theme requires the following plugins to work properly:', 'text-domain'); ?></p>
@@ -35,7 +32,7 @@ class FullstackAdminSettings implements FullstackInterface
         </div>
     <?php }
 
-    public function create_projects_post_type()
+    public function add_projects_post_type(): void
     {
         /**
          * Register the 'projects' post type and its dependencies.
@@ -99,7 +96,7 @@ class FullstackAdminSettings implements FullstackInterface
         return false;
     }
 
-    public function create_theme_pages()
+    public function add_theme_pages()
     {
         $pages = get_pages();
         $filteredPages = array();
@@ -150,10 +147,16 @@ class FullstackAdminSettings implements FullstackInterface
 
     public function render_custom_options_page()
     {
+        $acfJsonPath = get_theme_file_uri('assets/files/acf-projects-custom-fields.json');
     ?>
         <div class="wrap">
             <h1><?= esc_html_x('Fullstack Settings', 'fullstack') ?></h1>
             <p><?= esc_html_x('This is a brief description of the custom option page.', 'fullstack') ?></p>
+
+            <p>
+                <span><strong><?= esc_html_x('ACF Projects file:', 'fullstack') ?></strong></span>
+                <span style="padding-left: 12px"><a href="<?= $acfJsonPath ?>" download>acf-projects-custom-fields.json</a></span>
+            </p>
 
             <form method="post" action="options.php">
                 <?php
