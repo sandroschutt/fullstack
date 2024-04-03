@@ -23,6 +23,7 @@ class FUllstackSettings {
         add_action('wp_enqueue_scripts', array($this->admin, 'enqueue_scripts'));
         add_action('wp_enqueue_scripts', array($this->admin, 'enqueue_styles'));
         add_action('admin_notices', array($this->admin, 'admin_notices'));
+        add_action('admin_menu', array($this->admin, 'add_theme_options_page'));
     }
 
     public function filter_hooks() {
